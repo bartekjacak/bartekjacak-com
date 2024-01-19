@@ -2,28 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  @font-face {
+    font-family: "Vremena Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Vremena Grotesk Book"),
+      url("/fonts/VremenaGroteskBook.woff") format("woff");
+    font-display: swap;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @font-face {
+    font-family: "Vremena Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Vremena Grotesk Regular"),
+      url("/fonts/VremenaGrotesk.woff") format("woff");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Vremena Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Vremena Grotesk Medium"),
+      url("/fonts/VremenaGroteskMedium.woff") format("woff");
+    font-display: swap;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: theme("fontFamily.sans");
+    color: theme("colors.text");
+    font-size: theme("fontSize.base");
+    line-height: theme("lineHeight.normal");
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    -webkit-text-decoration-skip: none;
+  }
+
+  ::selection {
+    background: theme("colors.lime");
+  }
+
+  ::-moz-selection {
+    background: theme("colors.lime");
+  }
 }
 
 @layer utilities {
