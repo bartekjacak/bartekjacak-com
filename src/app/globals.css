@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  /* @todo: use next recommended way to handle local fonts */
   @font-face {
     font-family: "Vremena Grotesk";
     font-style: normal;
     font-weight: 400;
-    src: local("Vremena Grotesk Book"),
+    src:
+      local("Vremena Grotesk Book"),
       url("/fonts/VremenaGroteskBook.woff") format("woff");
     font-display: swap;
   }
@@ -16,7 +18,8 @@
     font-family: "Vremena Grotesk";
     font-style: normal;
     font-weight: 600;
-    src: local("Vremena Grotesk Regular"),
+    src:
+      local("Vremena Grotesk Regular"),
       url("/fonts/VremenaGrotesk.woff") format("woff");
     font-display: swap;
   }
@@ -25,7 +28,8 @@
     font-family: "Vremena Grotesk";
     font-style: normal;
     font-weight: 700;
-    src: local("Vremena Grotesk Medium"),
+    src:
+      local("Vremena Grotesk Medium"),
       url("/fonts/VremenaGroteskMedium.woff") format("woff");
     font-display: swap;
   }
@@ -56,7 +60,20 @@
   a {
     color: inherit;
     text-decoration: underline;
-    -webkit-text-decoration-skip: none;
+  }
+
+  a:hover {
+    color: theme(colors.green);
+    transition: color 0.2s ease-in-out;
+  }
+
+  h2 {
+    font-size: theme("fontSize.28");
+    line-height: theme("lineHeight.normal");
+    font-weight: theme("fontWeight.bold");
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: theme("letterSpacing.tight");
   }
 
   ::selection {
