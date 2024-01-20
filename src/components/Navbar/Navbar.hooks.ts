@@ -9,13 +9,8 @@ export function useNavLinks(): ComponentProps<typeof NavLink>[] {
     },
     {
       // @todo: change to /about once ready
-      to: "/",
+      to: "/about",
       children: "about",
-    },
-    {
-      // @todo: change to /projects once ready
-      to: "/",
-      children: "projects",
     },
     {
       to: "https://github.com/bartekjacak",

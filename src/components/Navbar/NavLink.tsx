@@ -11,7 +11,9 @@ interface Props {
 export default function NavLink({ to, children, isExternal = false }: Props) {
   if (isExternal) {
     return (
-      <li className="text-18 flex  gap-[6px] leading-tight">
+      // reduce the gap between links if there's the external link icon
+      // applied for better visual alignment
+      <li className="text-18 mr-[-6px] flex gap-[6px] leading-tight">
         <a href={String(to)} target="_blank" rel="noopener">
           {children}
         </a>

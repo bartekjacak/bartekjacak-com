@@ -33,6 +33,8 @@ const config: Config = {
         8: "32px",
         9: "36px",
         10: "40px",
+        11: "44px",
+        12: "48px",
       },
       letterSpacing: {
         tight: "-0.9px",

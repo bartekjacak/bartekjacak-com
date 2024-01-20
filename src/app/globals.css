@@ -16,6 +16,16 @@
 
   @font-face {
     font-family: "Vremena Grotesk";
+    font-style: italic;
+    font-weight: 400;
+    src:
+      local("Vremena Grotesk Book Italic"),
+      url("/fonts/VremenaGroteskBookItalic.woff") format("woff");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Vremena Grotesk";
     font-style: normal;
     font-weight: 600;
     src:
@@ -41,8 +51,8 @@
   html {
     font-family: theme("fontFamily.sans");
     color: theme("colors.text");
-    font-size: theme("fontSize.base");
-    line-height: theme("lineHeight.normal");
+    font-size: theme("fontSize.18");
+    line-height: theme("lineHeight.tight");
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -74,6 +84,18 @@
     margin-top: 0;
     margin-bottom: 0;
     letter-spacing: theme("letterSpacing.tight");
+  }
+
+  p {
+    font-size: 16px;
+    color: theme("colors.gray.900");
+    line-height: theme("lineHeight.normal");
+    /* text-wrap: pretty; */
+  }
+
+  p a {
+    color: theme("colors.green");
+    text-decoration: underline;
   }
 
   ::selection {
