@@ -26,6 +26,12 @@ export default function SectionWithExpandableList<T>({
   items,
   itemRenderer,
 }: Props<T>) {
+  function getItemOpacity(index: number) {
+    // apply gradual opacity only if items are folded
+    if (items.length <= MAX_VISIBLE_ITEMS) return "1";
+    return ITEM_INDEX_TO_OPACITY_MAPPING[index];
+  }
+
   return (
     <section>
       <header>
@@ -36,10 +42,7 @@ export default function SectionWithExpandableList<T>({
         {items
           .slice(0, MAX_VISIBLE_ITEMS)
           .map((item, index) =>
-            itemRenderer(
-              { ...item, opacity: ITEM_INDEX_TO_OPACITY_MAPPING[index] },
-              index,
-            ),
+            itemRenderer({ ...item, opacity: getItemOpacity(index) }, index),
           )}
         {items.length > MAX_VISIBLE_ITEMS && (
           <li>
