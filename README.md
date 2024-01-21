@@ -1,4 +1,4 @@
-## bartekjacak.com
+# 👔 bartekjacak.com
 
 Personal website written with Next.js and published on Vercel.
 
