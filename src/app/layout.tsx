@@ -8,6 +8,48 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: PAGE_TITLE_BASE,
   description: PAGE_DESCRIPTION,
+  // @todo: use env variable
+  metadataBase: new URL("https://bartekjacak-com.vercel.app/"),
+  keywords: [
+    "Bartek",
+    "Jacak",
+    "software",
+    "engineer",
+    "frontend",
+    "web",
+    "developer",
+    "portfolio",
+    "projects",
+    "blog",
+    "about",
+    "contact",
+    "warsaw",
+    "poland",
+  ],
+  creator: "Bartek Jacak",
+  icons: {
+    icon: [
+      {
+        url: "/favicon-light.png",
+        sizes: "200x200",
+        media: "(prefers-color-scheme: dark)",
+        type: "image/png",
+      },
+      {
+        url: "/favicon-dark.png",
+        media: "(prefers-color-scheme: light)",
+        sizes: "200x200",
+        type: "image/png",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    images: "/preview.png",
+    description: PAGE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({
