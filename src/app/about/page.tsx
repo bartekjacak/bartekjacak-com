@@ -27,9 +27,10 @@ export default function About() {
         <Image
           src="/images/goofball.jpg"
           alt="Goofy photo of myself"
-          width="220"
-          height="300"
+          width="210"
+          height="280"
           placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAANAAoDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAwUGCP/EACIQAAEEAgMAAgMAAAAAAAAAAAECAwQFERIABgcIITFCof/EABQBAQAAAAAAAAAAAAAAAAAAAAb/xAAgEQEAAQMDBQAAAAAAAAAAAAABAgMRIQAEMQWBkaHR/9oADAMBAAIRAxEAPwAHZPRJqp99Km+mWPVpdaVsUNRGqi81MS2jYOvOqaU2suL2Guw0SBkg5PLGqtUWtXDtFsuIVMjtyCkfhJWkKx/eYx9J+RvrnTrPs3TK7syjHsZJfjvlJDkBlQwWWfvUJKQASQf2IxseNqf519rrKiDWyPPaCW7EjNMLfLrqC6pKQCvUHCckZwPoZ4Tj0+tZlEuPGT4e76X1d9RSMTCGcPPlv2DX/9k="
         />
         <figcaption className="text-xs italic text-gray-600">
           best one I could find
@@ -81,8 +82,9 @@ export default function About() {
               src="/images/warsaw.jpg"
               alt="Photo of Warsaw"
               width="220"
-              height="300"
+              height="275"
               placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAANAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwUI/8QAJBAAAgEDAgYDAAAAAAAAAAAAAQIDBBEhAAUGBwgSMZETQWH/xAAUAQEAAAAAAAAAAAAAAAAAAAAG/8QAHxEAAQMEAwEAAAAAAAAAAAAAAgEDEQAEBRIxYaHR/9oADAMBAAIRAxEAPwA34h6SZ6WdqISBJndjEhGWVRc+hqSOkPdrDx61r3nTvsg5kcFOtLGixVUscgQlflEsRGbYxb7Bv+aSRsVCoC9l7Y8DSi1y4ubCQJKLHiUWvcIbWhi4sEk89/Ir/9k="
             />
           </figure>
 
@@ -91,8 +93,9 @@ export default function About() {
               src="/images/mountains.jpg"
               alt="Photo of a mountain landscape in Morocco"
               width="220"
-              height="300"
+              height="275"
               placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAAAAAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/2wBDAQMDAwQDBAgEBAgQCwkLEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBD/wAARCAANAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgcI/8QAIxAAAgEEAQMFAAAAAAAAAAAAAQMCBAUGEQASISIIEzFRwf/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAHBEAAQUAAwAAAAAAAAAAAAAAAgABAwUREjEy/9oADAMBAAIRAxEAPwCpVue2BNCqeN22xKWJR8qh0nlg6hHp8ABHZOtj8PBr8ty5j2MU6hhCUzKMV2aMogE9gJE7I+ieZcochyfJ7BaZUl/qLXc8fHvUlUkBi2K0dwcmXZpMgCJE6HkOk73wk31KZohs0uxrFHsXIxk2VE6JmQdGREXADfzoADkgEljLvA2fO0gVXWh6jX//2Q=="
             />
           </figure>
         </div>
