@@ -1,4 +1,6 @@
 import { useProjects } from "~/content/useProjects";
+import ExternalLinkIcon from "~/icons/ExternalLinkIcon";
+
 import SectionWithExpandableList, {
   BaseItemType,
 } from "../SectionWithExpandableList/SectionWithExpandableList";
@@ -26,7 +28,7 @@ function Project({
     <li className="flex justify-between gap-4">
       <a
         href={url}
-        className="text-gray-900 no-underline"
+        className="flex gap-1 text-gray-900 no-underline"
         style={{
           opacity,
         }}
@@ -34,6 +36,9 @@ function Project({
         rel="noopener"
       >
         <h3 className="underline">{name}</h3>
+        <div className="mt-[3px]">
+          <ExternalLinkIcon />
+        </div>
       </a>
     </li>
   );
