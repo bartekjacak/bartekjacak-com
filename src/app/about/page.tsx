@@ -49,7 +49,7 @@ export default function About() {
           className="inline-flex gap-1"
         >
           flatpixels
-          <span className="mt-[3px]">
+          <span className="mt-[4px]">
             <ExternalLinkIcon />
           </span>
         </a>
@@ -67,7 +67,7 @@ export default function About() {
           className="inline-flex gap-1"
         >
           photojournal
-          <span className="mt-[3px]">
+          <span className="mt-[4px]">
             <ExternalLinkIcon />
           </span>
         </a>{" "}
