@@ -89,7 +89,7 @@
     transition: color 0.2s ease-in-out;
   }
 
-  h2 {
+  h1 {
     font-size: theme("fontSize.28");
     line-height: theme("lineHeight.normal");
     font-weight: theme("fontWeight.bold");

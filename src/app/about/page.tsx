@@ -10,8 +10,11 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <section className="flex flex-col gap-4 pb-20">
-      <h2>about</h2>
+    <article className="flex flex-col gap-4 pb-20">
+      <header>
+        <h1>about</h1>
+      </header>
+
       <p>
         Hey, I&apos;m Bartek <i>(bar-teh•k)</i>. I work as a software engineer
         at an American InsurTech company, where I tightly collaborate with
@@ -19,17 +22,20 @@ export default function About() {
         products used by thousands. Specializing in frontend, my mission is to
         make the web experience smooth and fast for all the users.
       </p>
-      <figure className="my-2 flex break-inside-avoid-column flex-col gap-1 self-center text-center">
+
+      <figure className="my-2 flex break-inside-avoid-column flex-col gap-2 self-center text-center">
         <Image
           src="/images/goofball.jpg"
           alt="Goofy photo of myself"
           width="220"
           height="300"
+          placeholder="blur"
         />
         <figcaption className="text-xs italic text-gray-600">
           best one I could find
         </figcaption>
       </figure>
+
       <p>
         I&apos;m passionate about the web, however my background spans across
         various technologies and domains. Before any of my commercial
@@ -42,9 +48,9 @@ export default function About() {
           className="inline-flex gap-1"
         >
           flatpixels
-          <div className="mt-[3px]">
+          <span className="mt-[3px]">
             <ExternalLinkIcon />
-          </div>
+          </span>
         </a>
         . From Unity games, through blog themes and Mac apps, we&apos;ve tried
         it all.
@@ -60,32 +66,41 @@ export default function About() {
           className="inline-flex gap-1"
         >
           photojournal
-          <div className="mt-[3px]">
+          <span className="mt-[3px]">
             <ExternalLinkIcon />
-          </div>
+          </span>
         </a>{" "}
         where I posted my photos daily — almost 1700 days of my life are
         documented on everyday photos.
       </p>
-      <div className="mt-6 flex justify-evenly">
-        <Image
-          src="/images/warsaw.jpg"
-          alt="Goofy photo of myself"
-          width="220"
-          height="300"
-        />
 
-        <Image
-          src="/images/desert.jpg"
-          alt="Goofy photo of myself"
-          width="220"
-          height="300"
-        />
-      </div>
+      <section className="flex flex-col gap-3">
+        <div className="mt-6 flex justify-evenly">
+          <figure>
+            <Image
+              src="/images/warsaw.jpg"
+              alt="Photo of Warsaw"
+              width="220"
+              height="300"
+              placeholder="blur"
+            />
+          </figure>
 
-      <figcaption className="self-center text-xs italic text-gray-600">
-        had I mention my love for vertical photos?
-      </figcaption>
-    </section>
+          <figure>
+            <Image
+              src="/images/mountains.jpg"
+              alt="Photo of a mountain landscape in Morocco"
+              width="220"
+              height="300"
+              placeholder="blur"
+            />
+          </figure>
+        </div>
+
+        <footer className="self-center text-xs italic text-gray-600">
+          had I mentioned my love for vertical photos?
+        </footer>
+      </section>
+    </article>
   );
 }

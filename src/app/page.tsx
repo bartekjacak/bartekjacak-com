@@ -5,8 +5,8 @@ export default function Home() {
   const projects = useProjects();
 
   return (
-    <div>
+    <>
       <ExpandableProjectsSection projects={projects} />
-    </div>
+    </>
   );
 }

@@ -9,7 +9,7 @@ export default function PageHeader() {
   return (
     <header className="flex flex-col items-start gap-5">
       <div className="flex gap-2">
-        <h2>bartekjacak.com</h2>
+        <h1>bartekjacak.com</h1>
         <div className="mt-[2px]" aria-hidden="true">
           <InteractiveSmiley />
         </div>

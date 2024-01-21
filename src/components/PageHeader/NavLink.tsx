@@ -14,13 +14,13 @@ export default function NavLink({ to, label, isExternal = false }: Props) {
     return (
       // reduce the gap between links if there's the external link icon
       // applied for better visual alignment
-      <li className="text-18 mr-[-6px] flex gap-[6px] leading-tight">
+      <li className="mr-[-6px] flex gap-[6px] text-18 leading-tight">
         <a href={String(to)} target="_blank" rel="noopener">
           {label}
         </a>
-        <div className="mt-[3px]">
+        <span className="mt-[3px]">
           <ExternalLinkIcon />
-        </div>
+        </span>
       </li>
     );
   }

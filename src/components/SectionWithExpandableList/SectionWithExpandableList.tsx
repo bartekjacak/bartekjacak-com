@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ReactNode } from "react";
 import ChevronDownIcon from "~/icons/ChevronDownIcon";
 
@@ -29,7 +28,10 @@ export default function SectionWithExpandableList<T>({
 }: Props<T>) {
   return (
     <section>
-      <h2>{title}</h2>
+      <header>
+        <h1>{title}</h1>
+      </header>
+
       <ul className="mt-4 flex flex-col gap-4">
         {items
           .slice(0, MAX_VISIBLE_ITEMS)
@@ -41,12 +43,12 @@ export default function SectionWithExpandableList<T>({
           )}
         {items.length > MAX_VISIBLE_ITEMS && (
           <li>
-            <Link href="/" className="flex items-center gap-1">
+            <button className="flex items-center gap-1">
               See all {items.length} {title.toLowerCase()}{" "}
               <span className="mt-[-2px]" aria-hidden="true">
                 <ChevronDownIcon />
               </span>
-            </Link>
+            </button>
           </li>
         )}
       </ul>

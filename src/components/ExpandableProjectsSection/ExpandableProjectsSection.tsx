@@ -36,9 +36,9 @@ function Project({
         rel="noopener"
       >
         <h3 className="underline">{name}</h3>
-        <div className="mt-[3px]">
+        <span className="mt-[3px]">
           <ExternalLinkIcon />
-        </div>
+        </span>
       </a>
     </li>
   );
