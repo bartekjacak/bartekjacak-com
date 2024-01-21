@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
-import { Navbar } from "~/components/Navbar";
+import { PageHeader } from "~/components/PageHeader";
 
+import { PAGE_DESCRIPTION, PAGE_TITLE_BASE } from "~/utils/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bartek Jacak — software engineer personal website",
-  description:
-    "Hey, I'm Bartek I work as a software engineer at an American InsurTech company.",
+  title: PAGE_TITLE_BASE,
+  description: PAGE_DESCRIPTION,
 };
 
 export default function RootLayout({
@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="m-auto flex min-h-screen w-full max-w-[664px] flex-col gap-10 px-8 pt-[58px]">
-          <Navbar />
-          {children}
-        </main>
+        <div className="m-auto flex min-h-screen w-full max-w-[664px] flex-col gap-10 px-8 pt-[58px]">
+          <PageHeader />
+          <main>{children}</main>
+        </div>
       </body>
     </html>
   );
