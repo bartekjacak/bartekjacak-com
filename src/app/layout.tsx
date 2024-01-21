@@ -6,6 +6,7 @@ import { PAGE_DESCRIPTION, PAGE_TITLE_BASE } from "~/utils/seo";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  // @todo: next has their way for title templates
   title: PAGE_TITLE_BASE,
   description: PAGE_DESCRIPTION,
   // @todo: use env variable
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
     icon: [
       {
         url: "/favicon-light.png",
-        sizes: "200x200",
         media: "(prefers-color-scheme: dark)",
+        sizes: "200x200",
         type: "image/png",
       },
       {
