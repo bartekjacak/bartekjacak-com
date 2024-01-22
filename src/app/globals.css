@@ -67,7 +67,7 @@
     causes the jumping effect. fix by adding additional margin to the left side of the page
     <https://aykevl.nl/2014/09/fix-jumping-scrollbar>
   */
-  @media screen and (min-width: theme("screens.md")) {
+  @media screen and (min-width: 720px) {
     html {
       margin-left: calc(100vw - 100%);
       margin-right: 0;
