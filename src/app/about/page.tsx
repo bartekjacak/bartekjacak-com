@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import ExternalLinkIcon from "~/icons/ExternalLinkIcon";
 
 import { getSubpageTitle } from "~/utils/seo";
 
@@ -42,16 +41,8 @@ export default function About() {
         various technologies and domains. Before any of my commercial
         experiences, I polished my skills working on numerous projects, either
         solo or together with two of my friends under the brand{" "}
-        <a
-          href="https://flatpixels.pl"
-          target="_blank"
-          rel="noopener"
-          className="inline-flex gap-1"
-        >
+        <a href="https://flatpixels.pl" target="_blank" rel="nofollow noopener">
           flatpixels
-          <span className="mt-[4px]">
-            <ExternalLinkIcon />
-          </span>
         </a>
         . From Unity games, through blog themes and Mac apps, we&apos;ve tried
         it all.
@@ -63,13 +54,9 @@ export default function About() {
         <a
           href="https://tookapic.com/bartlomiej"
           target="_blank"
-          rel="noopener"
-          className="inline-flex gap-1"
+          rel="nofollow noopener"
         >
           photojournal
-          <span className="mt-[4px]">
-            <ExternalLinkIcon />
-          </span>
         </a>{" "}
         where I posted my photos daily — almost 1700 days of my life are
         documented on everyday photos.

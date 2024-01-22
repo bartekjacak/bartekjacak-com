@@ -85,8 +85,12 @@
   }
 
   a:hover {
-    color: theme(colors.green);
+    color: theme("colors.green.400");
     transition: color 0.2s ease-in-out;
+  }
+
+  article a:hover {
+    color: theme("colors.green.500");
   }
 
   h1 {
@@ -102,25 +106,50 @@
     font-size: 16px;
     color: theme("colors.gray.900");
     line-height: theme("lineHeight.normal");
-    /* text-wrap: pretty; */
+    text-wrap: pretty;
   }
 
   p a {
-    color: theme("colors.green");
+    color: theme("colors.green.400");
     text-decoration: underline;
   }
 
+  a[rel="nofollow noopener"] {
+    display: inline-block;
+  }
+
+  a[rel="nofollow noopener"]:after {
+    content: "";
+    background-color: theme("colors.text");
+    mask-image: url("/icons/external.svg");
+    background-size: cover;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 6px;
+  }
+
+  a[rel="nofollow noopener"]:hover:after {
+    background-color: theme("colors.green.400");
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  article a[rel="nofollow noopener"]:after {
+    background-color: theme("colors.green.400");
+  }
+
+  article a[rel="nofollow noopener"]:hover:after {
+    background-color: theme("colors.green.500");
+  }
+
   ::selection {
-    background: theme("colors.lime");
+    background: theme("colors.green.100");
   }
 
   ::-moz-selection {
-    background: theme("colors.lime");
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    background: theme("colors.green.100");
   }
 }

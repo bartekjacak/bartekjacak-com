@@ -12,8 +12,11 @@ const config: Config = {
         black: "#000000",
         white: "#ffffff",
         text: "#000000",
-        green: "#007a14",
-        lime: "#31ff3f",
+        green: {
+          100: "#31ff3f",
+          400: "#007a14",
+          500: "#00500d",
+        },
       },
       fontFamily: {
         sans: ["Vremena Grotesk", "sans-serif"],
