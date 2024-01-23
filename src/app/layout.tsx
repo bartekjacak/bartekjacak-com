@@ -1,4 +1,5 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 
 import { PageHeader } from "~/components/PageHeader";
@@ -66,6 +67,8 @@ export default function RootLayout({
           <PageHeader />
           <main>{children}</main>
         </div>
+
+        <Analytics />
       </body>
       {/* @todo: move to env */}
       <GoogleAnalytics gaId="G-2YT5QLHL2N" />
