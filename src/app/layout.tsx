@@ -1,5 +1,6 @@
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 
 import { PageHeader } from "~/components/PageHeader";
@@ -67,7 +68,7 @@ export default function RootLayout({
           <PageHeader />
           <main>{children}</main>
         </div>
-
+        <SpeedInsights />
         <Analytics />
       </body>
       {/* @todo: move to env */}
