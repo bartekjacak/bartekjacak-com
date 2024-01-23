@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 
 import { PageHeader } from "~/components/PageHeader";
@@ -66,6 +67,8 @@ export default function RootLayout({
           <main>{children}</main>
         </div>
       </body>
+      {/* @todo: move to env */}
+      <GoogleAnalytics gaId="G-2YT5QLHL2N" />
     </html>
   );
 }
