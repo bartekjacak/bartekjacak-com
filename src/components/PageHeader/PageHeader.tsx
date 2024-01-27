@@ -8,7 +8,7 @@ export default function PageHeader() {
 
   return (
     <header className="flex flex-col items-start gap-5">
-      <div className="xsm:flex-col-reverse xsm:gap-0 flex gap-2">
+      <div className="flex gap-2">
         <h1>bartekjacak.com</h1>
         <div className="mt-[2px]" aria-hidden="true">
           <InteractiveSmiley />
@@ -16,7 +16,7 @@ export default function PageHeader() {
       </div>
 
       <nav>
-        <ul className="xsm:flex-col xsm:gap-4 flex gap-8">
+        <ul className="xsm:gap-4 flex flex-wrap gap-8">
           {navLinks.map((props) => (
             <NavLink key={String(props.to)} {...props} />
           ))}
