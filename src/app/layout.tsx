@@ -6,6 +6,8 @@ import type { Metadata } from "next";
 import { PageHeader } from "~/components/PageHeader";
 
 import { PAGE_DESCRIPTION, PAGE_TITLE_BASE } from "~/utils/seo";
+
+import { Vremena } from "./fonts/Vremena";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -62,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={Vremena.className}>
       <body>
         <div className="m-auto flex min-h-screen w-full max-w-[664px] flex-col gap-10 px-8 pt-[58px]">
           <PageHeader />

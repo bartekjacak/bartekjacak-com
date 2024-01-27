@@ -18,9 +18,6 @@ const config: Config = {
           500: "#00500d",
         },
       },
-      fontFamily: {
-        sans: ["Vremena Grotesk", "sans-serif"],
-      },
       fontSize: {
         18: "18px",
         28: "28px",
