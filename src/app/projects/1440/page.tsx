@@ -98,7 +98,11 @@ export default function OneOneFourFourPost() {
 
       <p>
         The idea was born while working on{" "}
-        <a href="https://flatpixels.pl" target="_blank" rel="nofollow noopener">
+        <a
+          href="https://monofocus.app/"
+          target="_blank"
+          rel="nofollow noopener"
+        >
           MonoFocus
         </a>{" "}
         — our main project at the time. We were close to burnout, and at the
