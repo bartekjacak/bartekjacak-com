@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <article className="flex flex-col gap-4 pb-20 sm:pb-10">
+    <article className="flex flex-col gap-4">
       <header>
         <h1>about</h1>
       </header>

@@ -68,7 +68,7 @@ export default function RootLayout({
       <body>
         <div className="m-auto flex min-h-screen w-full max-w-[664px] flex-col gap-10 px-8 pt-[58px]">
           <PageHeader />
-          <main>{children}</main>
+          <main className="pb-20 sm:pb-10">{children}</main>
         </div>
         <SpeedInsights />
         <Analytics />

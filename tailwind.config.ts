@@ -20,6 +20,8 @@ const config: Config = {
       },
       fontSize: {
         18: "18px",
+        20: "20px",
+        24: "24px",
         28: "28px",
       },
       space: {

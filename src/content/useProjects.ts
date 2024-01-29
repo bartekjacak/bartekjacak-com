@@ -25,16 +25,16 @@ export function useProjects(): Project[] {
     },
     {
       url: "https://gitpigeon.com/",
-      name: "GitPigeon — receive GitHub notifications on your Mac",
+      name: "GitPigeon — receive GitHub notifications to your Mac",
       status: ProjectStatus.Transferred,
     },
     {
-      url: "https://1440app.com/",
-      name: "1440 — make every minute count",
+      url: "/projects/1440",
+      name: "1440 — see how much time is left in the day",
       status: ProjectStatus.Maintenance,
     },
     {
-      name: "UpolujMaka — find your dream MacBook",
+      name: "UpolujMaka — find your dream Mac computer",
       status: ProjectStatus.Inactive,
     },
   ];
