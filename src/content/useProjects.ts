@@ -24,7 +24,7 @@ export function useProjects(): Project[] {
       status: ProjectStatus.Maintenance,
     },
     {
-      url: "https://gitpigeon.com/",
+      url: "/projects/gitpigeon",
       name: "GitPigeon — receive GitHub notifications to your Mac",
       status: ProjectStatus.Transferred,
     },

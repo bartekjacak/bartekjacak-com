@@ -58,6 +58,8 @@ export default function OneOneFourFourPost() {
       <a
         href="https://www.producthunt.com/posts/1440-minutes-left-today?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-1440&#0045;minutes&#0045;left&#0045;today"
         target="_blank"
+        rel="nofollow noopener"
+        data-hide-link-icon
         className="my-2 self-center"
       >
         <Image
