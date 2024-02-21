@@ -1,6 +1,6 @@
 import { useProjects } from "~/content/useProjects";
 
-import SectionWithExpandableList from "../SectionWithExpandableList/SectionWithExpandableList";
+import { LimitedItemsList } from "../LimitedItemsList";
 
 import Project from "./Project";
 
@@ -8,9 +8,9 @@ type Props = {
   projects: ReturnType<typeof useProjects>;
 };
 
-export default function ExpandableProjectsSection({ projects }: Props) {
+export default function ProjectsSection({ projects }: Props) {
   return (
-    <SectionWithExpandableList
+    <LimitedItemsList
       title="projects"
       items={projects}
       itemRenderer={(props) => <Project key={props.url} {...props} />}

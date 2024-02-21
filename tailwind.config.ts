@@ -11,7 +11,10 @@ const config: Config = {
       colors: {
         black: "#000000",
         white: "#ffffff",
-        text: "#000000",
+        text: {
+          primary: "#000000",
+          secondary: "#727272",
+        },
         green: {
           100: "#31ff3f",
           400: "#007a14",

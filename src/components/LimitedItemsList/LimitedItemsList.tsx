@@ -21,7 +21,7 @@ type Props<T> = {
   itemRenderer: (item: T & BaseItemType, index: number) => ReactNode;
 };
 
-export default function SectionWithExpandableList<T>({
+export default function LimitedItemsList<T>({
   title,
   items,
   itemRenderer,
