@@ -38,8 +38,8 @@ export default function GitPigeonPost() {
         <a href="https://flatpixels.pl" target="_blank" rel="nofollow noopener">
           flatpixels
         </a>
-        . It sends you native Mac notifications about what's going on in your
-        repositories. Currently owned and maintained by{" "}
+        . It sends you native Mac notifications about what&apos;s going on in
+        your repositories. Currently owned and maintained by{" "}
         <a
           href="https://github.com/neonowy"
           target="_blank"
@@ -67,9 +67,9 @@ export default function GitPigeonPost() {
 
       <p>
         The client part was written in Swift, the backend in Ruby on Rails, and
-        the landing page was crafted using Gatsby. GitPigeon's official launch
-        happened on ProductHunt, where it got 130 upvotes and over 300 unique
-        visitors on the launch day.
+        the landing page was crafted using Gatsby. GitPigeon&apos;s official
+        launch happened on ProductHunt, where it got 130 upvotes and over 300
+        unique visitors on the launch day.
       </p>
 
       <a
@@ -103,15 +103,15 @@ export default function GitPigeonPost() {
       </p>
 
       <p>
-        Before, we were using either email or GitHub inbox. It wasn't ideal. It
-        was hard to keep track of everything and navigate through the unwanted
-        noise. Who needs a notification about a new unrelated comment under a PR
-        that they already left a review on?
+        Before, we were using either email or GitHub inbox. It wasn&apos;t
+        ideal. It was hard to keep track of everything and navigate through the
+        unwanted noise. Who needs a notification about a new unrelated comment
+        under a PR that they already left a review on?
       </p>
 
       <p>
-        GitPigeon was meant to be an opinionated tool that we'd use ourselves.
-        Additionally, having our previous experiences with{" "}
+        GitPigeon was meant to be an opinionated tool that we&apos;d use
+        ourselves. Additionally, having our previous experiences with{" "}
         <Link href="/projects/1440">1440</Link>, we knew that launching smaller
         side projects is a decent marketing strategy that works in the macOS
         realm. So we decided to give it a try.

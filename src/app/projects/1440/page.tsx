@@ -71,7 +71,7 @@ export default function OneOneFourFourPost() {
       </a>
 
       <p>
-        The app is available on the Mac App Store. Since the launch it had over
+        The app is available on the Mac App Store. Since the launch, it had over
         3k unique downloads. We aren&apos;t actively working on it anymore, but
         it&apos;s as simple as it gets, so it&apos;s still working fine.
       </p>
@@ -125,7 +125,7 @@ export default function OneOneFourFourPost() {
       </p>
 
       <p>
-        The whole project, from idea, through designing, coding and creating
+        The whole project, from idea, through designing, coding, and creating
         marketing assets, to the final product launch, took us 2 weeks to
         complete.
       </p>

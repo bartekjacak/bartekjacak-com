@@ -17,9 +17,9 @@ export default function About() {
       <p>
         Hey, I&apos;m Bartek <i>(bar-teh•k)</i>. I work as a software engineer
         at an American InsurTech company, where I tightly collaborate with
-        stakeholders, designers and fellow engineers to craft high-quality
-        products used by thousands. Specializing in frontend, my mission is to
-        make the web experience smooth and fast for all the users.
+        stakeholders, designers, and fellow engineers to craft high-quality
+        products used by thousands. Specializing in the frontend, my mission is
+        to make the web experience smooth and fast for all users.
       </p>
 
       <figure className="my-2 flex break-inside-avoid-column flex-col gap-2 self-center text-center">
@@ -37,10 +37,10 @@ export default function About() {
       </figure>
 
       <p>
-        I&apos;m passionate about the web, however my background spans across
+        I&apos;m passionate about the web, however, my background spans across
         various technologies and domains. Before any of my commercial
-        experiences, I polished my skills working on numerous projects, either
-        solo or together with two of my friends under the brand{" "}
+        experiences, I polished my skills by working on numerous projects,
+        either solo or together with two of my friends under the brand{" "}
         <a href="https://flatpixels.pl" target="_blank" rel="nofollow noopener">
           flatpixels
         </a>
@@ -56,10 +56,10 @@ export default function About() {
           target="_blank"
           rel="nofollow noopener"
         >
-          photojournal
+          photo journal
         </a>{" "}
         where I posted my photos daily — almost 1700 days of my life are
-        documented on everyday photos.
+        documented in everyday photos.
       </p>
 
       <section className="flex flex-col gap-3">
