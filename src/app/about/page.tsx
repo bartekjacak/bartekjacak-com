@@ -88,7 +88,7 @@ export default function About() {
         </div>
 
         <footer className="self-center text-xs italic text-gray-600">
-          had I mentioned my love for vertical photos?
+          did I mention my love for vertical photos?
         </footer>
       </section>
     </article>
