@@ -14,6 +14,11 @@ type Project = {
 export function useProjects(): Project[] {
   return [
     {
+      url: "https://cuerco.com/",
+      name: "Cuerco — wall art your guests can scan",
+      status: ProjectStatus.Active,
+    },
+    {
       url: "https://github.com/bartekjacak/bartekjacak-com",
       name: "bartekjacak.com — this very website",
       status: ProjectStatus.Active,
